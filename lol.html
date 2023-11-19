@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .B{
+            margin: 0 auto;
+            width: 700px;
+            height: 600px;
+            background-color: black;
+            position: relative;
+        }
+        *{
+            margin: 0;
+        }
+        .A{
+            display: flex;
+           width: 100px; 
+           height: 100px;
+           background-color: whitesmoke;
+           box-shadow: 5px 6px 7px paleturquoise;
+            position: absolute;
+           text-align: center;
+           color: aliceblue;
+           font-weight: bolder;
+           justify-content: center;
+           align-items: center;
+          border-radius: 15%;
+        }
+        .A img{
+            
+            
+        }
+        .A:hover{
+           
+      animation-name: div-color;
+      animation-duration: 15s;
+    
+          
+        }
+
+        @keyframes div-color{
+            0%{top: 0px; left: 0px;}
+            25%{top: 500px; bottom: 0px;left: 0;}
+            50%{top: 500px; right: 0px;left: 600px;}
+            75%{bottom: 500px;right: 0px;top: 0px;left: 600px; }
+            100%{left: 0;top: 0px; right: 500px;}
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="B">
+        <div class="A">
+           <img src="l.png" alt="" srcset="" style="width: 90px; height: 90px; object-fit: cover;">
+        </div>
+    </div>
+</body>
+</html>
